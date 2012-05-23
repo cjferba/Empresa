@@ -526,7 +526,7 @@ def iniciaDB():
 #  
 def destroyDB():
 	global micursor,Conexion
-	#micursor.execute("DROP TABLE EMPLEADOS;")
+	micursor.execute("DROP TABLE EMPLEADOS;")
 	Conexion.commit()
 	micursor.close()
 	Conexion.close()
